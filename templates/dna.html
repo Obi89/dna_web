@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>DNA Program</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Lekton|Libre+Barcode+128+Text|Miriam+Libre|Share+Tech+Mono" rel="stylesheet">
+</head>
+<body>
+<div class="dna">
+    <style>.dna{background-image: url(assets/img/police.jpeg);}</style>
+    <div class="dna_input">
+<h1>DNA-Test-Program!</h1>
+<form method="post" action="/dna-result">
+<h6><textarea name="dna" rows="10" cols="50" placeholder="Past the DNA-CODE here!" required></textarea></h6>
+   <button class="btn" type="submit">Test DNA</button>
+</form>
+  <div class="suspects">
+    <h3>Choose a Person and copy-past his DNA-CODE <br>into the input-field, to see his properties!</h3>
+  <h2>DNA-Larissa</h2>
+  <p>AAAGATGTTGGGTGTCCCATTTGGGAATGTGGGTAA
+    GGGCCGTGTAAGGTTTAAACCCCGGTTTGTGCAAATG
+    AACGTTCCBAGCCAGTGCCGCCCTGGGGAGGCCTCAC
+    CCAAGTAGTGACAACCGGGTTTGAAGGACCTTCGGGT
+    TAAAACCTCAGGCTTTCCAAAAGGGTGTCCCATTTGG
+    GAATGTGGGTAAGTGTCCCATTTGATTTGAAACCTCA
+    AACCTCAATGTGGGCCATTTGATTTGAAACCTCAAAT
+    TTGGGAATGTGGGTAAGGGCCGTGTAAGGCCCTGCAG
+    GAACTTCTTCTGGAAGACCTTCTCCTCCTGCAAATAA
+    AACCTCACCCATGAATGCTCACGCAAGTTTAACTGC</p>
+  <h2>DNA-Miha</h2>
+  <p>TGCAGGAACTTCATTGTCCCCCGGCCTCCTGCTGCT
+    GGGAGGTGGCCGGGCCACGGCCACCGCTGCCCTGCCC
+    CTGGAGGGTGGCCCCACCGGCCGAGACAGCGAGCATA
+    TGCAGGAAGCGGCAGGAATAAGGAAAAGCAGCCTCCT
+    GACTTTCCTCGCTTGGTGGTTTGAGTGGACCTCCCAG
+    GCCAGTGCCGGGCCCCTCATAGGAGAGGAAGCTCGGG
+    AGGTGGCCAGGCGGCAGGAAGGCGCACCCCCCCAGCA
+    ATCCGCGCGCCGGGACAGAATGCCCTGCAGGAACTTC
+    TTCTGGAAGACCTTCTCCTCCTGCAAATAAAACCTCA
+    CCCATGAATGCTCACGCAAGTTTAATTACAGACCTGAA</p>
+  <h2>DNA-Eva</h2>
+    <p>TTAGCTATCGCTGGTAAAATTTGGGGCACGTGGGAG
+      TGAGGCCTCAACCCGTTTGGGGGACGTGGTTTTACCT
+      TTGTGGTGGCGTGGTTGAAACCGTGTCGACGATTTGG
+      TGAAGGACCTTCTGCCCGTACGTTGGGTAACGTGTTT
+      AAAACCTCAAAACGTGTGTCCGTGAAACCCGTGTAGC
+      TGTAAAGTGTCCCGTGCGTAAAAAACCCCCGTGTTTC
+      TTTCGCGAACGTTTTAATGTTTACCCCGTGTACGTGA
+      AAAAGTGTCCCGTGGGTGTACGTGACGTACGTTTGGT
+      TTGAAACCCGTTTTTGTGCAAAGTGCGTAAAGTGGTA
+      GTGGTGTAAAACAAACGTAATGGACGTGCCAGTGTG
+    </p>
+  </div>
+  <h3>or</h3>
+       <div class="yourproperties">
+    <h3>Choose your own properties to create your DNA code!</h3>
+         <div class="properties">
+  <h2>Hair</h2>
+         <h4>black:</h4><p> CCAGCAATCGC</p>
+        <h4>brown:</h4><p> GCCAGTGCCG</p>
+         <h4>blonde:</h4><p> TTAGCTATCGC</p>
+         <h4>red:</h4><p> TGATCTGGCGC</p>
+           </div>
+         <div class="properties">
+  <h2>Face</h2>
+  <h4>square:</h4><p> GCCACGG</p>
+        <h4>round:</h4><p>ACCACAA</p>
+         <h4>oval:</h4><p> AGGCCTCA</p>
+           </div>
+           <div class="properties">
+  <h2>Eyes</h2>
+    <h4>blue:</h4><p> TTGTGGTGGC</p>
+        <h4>green:</h4><p> GGGAGGTGGC</p>
+         <h4>brown:</h4><p> AAGTAGTGAC</p>
+             </div>
+         <div class="properties">
+  <h2>Gender</h2>
+    <h4>female:</h4><p> TGAAGGACCTTC</p>
+        <h4>male:</h4><p> TGCAGGAACTTC</p>
+             </div>
+         <div class="properties">
+  <h2>Race</h2>
+    <h4>white:</h4><p> AAAACCTCA</p>
+        <h4>black:</h4><p> CGACTACAG</p>
+         <h4>asian:</h4><p> CGCGGGCCG</p>
+             </div>
+  </div>
+    </div>
+</div>
+</body>
+</html>
